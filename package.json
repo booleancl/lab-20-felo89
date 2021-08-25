@@ -1,0 +1,16 @@
+{
+  "name": "javascript-lab20",
+  "version": "1.0.0",
+  "description": "Singleton",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "test:ci": "jest --runInBand"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.0.6"
+  }
+}
