@@ -15,6 +15,14 @@ class EnterpriseUser {
       throw new Error('email is mandatory')
     }
 
+    if(!properties.organization) {
+      throw new Error('organization is mandatory')
+    }
+
+    if(!properties.credit_card) {
+      throw new Error('credit_card is mandatory')
+    }
+
     this.name = properties.name || 'not name set'
     this.username = properties.username || 'not username set'
     this.email = properties.email
