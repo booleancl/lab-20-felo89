@@ -9,7 +9,7 @@ describe('Singleton', () => {
     instanceOne.setBaseUrl('https://api.weather.com/')
     instanceTwo.setBaseUrl('https://api.countries.com/')
 
-    expect(instanceOne).toEqual(instanceTwo)
+    expect(instanceOne).not.toEqual(instanceTwo)
     expect(instanceOne.baseUrl).toEqual('https://api.weather.com/')
     expect(instanceTwo.baseUrl).toEqual('https://api.countries.com/')
   })
@@ -21,7 +21,7 @@ describe('Singleton', () => {
     instanceOne.setBaseUrl('https://api.weather.com/')
     instanceTwo.setBaseUrl('https://api.countries.com/')
 
-    expect(instanceOne).not.toEqual(instanceTwo)
+    expect(instanceOne).toEqual(instanceTwo)
     expect(instanceOne.baseUrl).toEqual('https://api.countries.com/')
     expect(instanceTwo.baseUrl).toEqual('https://api.countries.com/')
   })
